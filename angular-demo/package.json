@@ -8,7 +8,11 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "precommit": "lint"
+    "husky": {
+      "hooks": {
+          "pre-commit": "ng lint"
+      }
+    }
   },
   "private": true,
   "dependencies": {
