@@ -1,0 +1,18 @@
+<!-- <div class="container" > -->
+<!-- <app-navbar (navigate) = "navigateto($event.detail)"> </app-navbar> -->
+<div>
+    <app-adduser *ngIf="!authenticated" 
+    (addedUser)="addedUser($event.detail)">
+ </app-adduser>
+</div>
+
+<div>
+    <app-login *ngIf="!authenticated" (userVerify)="userValid($event.detail)"> </app-login>
+</div>
+
+
+
+
+<!-- </div> -->
+
+<router-outlet></router-outlet>
