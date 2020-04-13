@@ -1,18 +1,9 @@
-<!-- <div class="container" > -->
-<!-- <app-navbar (navigate) = "navigateto($event.detail)"> </app-navbar> -->
-<div>
-    <app-adduser *ngIf="!authenticated" 
-    (addedUser)="addedUser($event.detail)">
- </app-adduser>
+<div class="container">
+    <div>
+        <app-navbar (navigate)="navigateto($event.detail)"> </app-navbar>
+    </div>
+    <div>
+        <app-login *ngIf="!authenticated" (userVerify)="userValid($event.detail)"> </app-login>
+    </div>
 </div>
-
-<div>
-    <app-login *ngIf="!authenticated" (userVerify)="userValid($event.detail)"> </app-login>
-</div>
-
-
-
-
-<!-- </div> -->
-
 <router-outlet></router-outlet>

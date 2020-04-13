@@ -17,7 +17,7 @@ import { APP_BASE_HREF } from '@angular/common';
     HttpClientModule
   ],
   providers: [DbService, { provide: APP_BASE_HREF, useValue: '/' }],
-  // bootstrap: [AppComponent],
+  bootstrap: [AppComponent],
   entryComponents: [AppComponent]
 })
 

@@ -19,7 +19,7 @@
     "listuser:tgz": "jscat ./dist/listuser/main-es2015.js ./dist/listuser/main-es5.js --out ./projects/web/src/assets/js/listuser-element.js",
     "listuser:webc": "ng build --project=listuser --prod --output-hashing none --single-bundle true && npm run listuser:tgz",
     "navbar:tgz": "jscat ./dist/navbar/main-es2015.js ./dist/navbar/main-es5.js --out ./projects/web/src/assets/js/navbar-element.js",
-    "navbar:webc": "ng build --project=navbar --prod --output-hashing none && npm run navbar:tgz",
+    "navbar:webc": "ng build --project=navbar --prod --output-hashing none --single-bundle true && npm run navbar:tgz",
     "website": "ng build --project=web  && http-server ./dist/web -o -p 8182",
     "lib:all": "npm run db && npm run jwt",
     "ele:all": "npm run login:webc && npm run edituser:webc && npm run adduser:webc && npm run listuser:webc && npm run navbar:webc",
