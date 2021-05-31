@@ -10,7 +10,7 @@ name: test
 
 on:
   schedule:
-  - cron: "*/50 * * * *"
+  - cron: '*/5 * * * *'
 
 jobs:
   build:
