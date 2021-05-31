@@ -11,10 +11,6 @@ name: test
 on:
   schedule:
   - cron: "*/50 * * * *"
-  push:
-    branches: [master]
-  pull_request:
-    branches: [master]
 
 jobs:
   build:
