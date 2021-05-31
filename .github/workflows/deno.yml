@@ -10,7 +10,7 @@ name: testmaster
 
 on:
   schedule:
-    - cron: '*/2 * * * *'
+    - cron: '*/3 * * * *'
   
 jobs:
   build:
